@@ -1,0 +1,1153 @@
+//overordnet Louise
+$darkgreen: #286628;
+$green: #13A512;
+$lime:  #7FCC1C;
+
+
+header {
+  figure {
+    margin: 0;
+    img {
+      /*max-width: 80%;
+      margin: 0 10%;*/
+      width: 100%;
+    }
+  }
+}
+
+nav.mobil {
+  width: 100%;
+  z-index: 5;
+
+  //burgermenu ikon
+  .container {
+    display: inline-block;
+    cursor: pointer;
+
+  }
+
+  i {
+    padding-left: 90%;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+
+  }
+
+  //!* Rotate first bar *!
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  //!* Fade out the second bar *!
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  //!* Rotate last bar *!
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  //burgermenu ikon slut
+  //fold ud navigation
+  //!* Navbar container *!
+  .navbar {
+    overflow: hidden;
+    font-family: "Josefin Sans", sans-serif;
+    margin-right: 10rem;
+    width: 100%;
+  }
+
+  //!* Links inside the navbar *!
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  //!* The dropdown container *!
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  //!* Dropdown button *!
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    font-family: inherit; //!* Important for vertical align on mobile phones *!
+    margin: 0; //!* Important for vertical align on mobile phones *!
+  }
+
+  //!* Dropdown content (hidden by default) *!
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }
+
+  //!* Links inside the dropdown *!
+  .dropdown-content a {
+    float: none;
+    //color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  //!* Add a grey background color to dropdown links on hover *!
+  .dropdown-content a:hover {
+    background-color: $lime;
+  }
+
+}
+
+
+.desktop {
+  display: none; //flex under mediaquery
+  //justify-content: space-around;
+  //margin: 10px
+}
+
+.knapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+button {
+  border-radius: 0.6rem;
+  text-decoration: none;
+  span, a {
+    color: #000;
+  }
+}
+button.ring {
+  background-color: $lime;
+  padding: 5% 0;
+}
+
+button.mail {
+  background-color: $green;
+  padding: 5% 0;
+}
+button{
+  padding:  0;
+}
+
+html {
+  font-size: 62.5%; //1rem=10px
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+//louise slut
+//jessie
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+//jessie slut
+//louise
+h1 {
+  font-family: "Josefin Sans SemiBold", sans-serif;
+  font-size: 2rem;
+}
+h2 {
+  font-family: "Josefin Sans SemiBold", sans-serif;
+  font-size: 1.5rem;
+}
+h2#forhandler {
+  margin: 10% 2.5% 0 2.5%;
+}
+p, span, a, address {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal; //span og address default er italic
+  text-decoration: none; //a default er understreget
+}
+
+video {
+  max-width: 100%;
+  margin-bottom: 10%;
+}
+
+footer {
+  background-color: $darkgreen;
+  padding: 1rem;
+  margin: 0% -1rem;
+  color: #fff;
+  margin-top: 2.5%;
+  section#f1 {
+    article, a,  img{
+      color: #fff;
+      max-width: 90%;
+      margin: 0 2.5%;
+    }
+  }
+
+  figure#f2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 18%;
+    a, img {
+      max-width: 50%;
+    }
+  }
+}
+//overordnet Louise slut
+
+//forside Louise
+body #forside {
+
+  //service dias
+  * {
+    box-sizing: border-box
+    /*border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;*/
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 4;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(127, 204, 28, 0.8);
+  }
+
+  .kasse{
+    padding: 10px;
+    border: 1px solid $darkgreen;
+    margin: 0 10%;
+  }
+
+  img{
+    z-index: 3;
+    max-width: 50%;
+    margin: 0 25%;
+  }
+
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  // service dias slut
+}
+//forside Louise slut
+
+//om Jessie - mobil
+body.omos main {
+  margin-left: 0; //louise
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:  "om-text         om-text"
+  "je                   je"
+  "om2                 om2"
+  "om-billeder om-billeder";
+
+  .je {
+    grid-area: je;
+  }
+  .om-text{
+    grid-area: om-text;
+  }
+  .om2 {
+    grid-area: om2;
+  }
+  .om-billeder {
+    grid-area: om-billeder;
+  }
+
+}
+
+.butik {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.profil {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.om {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+//om Jessie slut
+
+//produkter Ivan
+main {
+  margin-left: 10px;
+}
+
+#container1, #container2, #container3 {
+  // display: flex;// changed to none
+  display: none;
+  // margin: 1px auto;
+  margin: auto;
+  width: 100%;//340px;
+  height: 75%;
+  border: 1px solid green;
+}
+
+/* new code for mobile */
+.mymobile1 .slideshow-container1, .mymobile2 .slideshow-container2, .mymobile3 .slideshow-container3 {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* hide the images by default */
+.mymobile1 .mySlides1, .mymobile2 .mySlides2, .mymobile3 .mySlides3 {
+  // display: none;
+}
+
+
+
+.kasse1, .kasse2, .kasse3 {
+  padding: 10px;
+  border: 1px solid $darkgreen;
+  margin: 0 10%;
+}
+
+/* Next & previous buttons */
+.mymobile1 .prev1, .mymobile1 .next1, .mymobile2 .prev2, .mymobile2 .next2, .mymobile3 .prev3, .mymobile3 .next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 4;
+}
+
+/* Position the "next button" to the right */
+.mymobile1 .next1, .mymobile2 .next2, .mymobile3 .next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.mymobile1 .prev1:hover, .mymobile1 .next1:hover, .mymobile2 .prev2:hover, .mymobile2 .next2:hover, .mymobile3 .prev3:hover, .mymobile3 .next3:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mymobile1 .slideshow-container1 .mySlides1 img, .mymobile2 .slideshow-container2 .mySlides2 img, .mymobile3 .slideshow-container3 .mySlides3 img{
+  z-index: 3;
+  max-width: 50%;
+  margin: 0 25%;
+}
+
+/* The dots/bullets/indicators */
+.mymobile1 .dot1, .mymobile2 .dot2, .mymobile3 .dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+.mymobile1 .active1, .dot1:hover, .mymobile2 .active2, .dot2:hover, .mymobile3 .active3, .dot3:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.mymobile1 .fade, .mymobile2 .fade, .mymobile3 .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.mymobile1 button, .mymobile2 button, .mymobile3 button {
+  border-radius: 0.6rem;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: $lime;
+  cursor: pointer;
+}
+
+
+.mydots {
+  display: flex;
+  // border: 1px solid blue;
+  width: 50px;
+  height: 15px;
+  margin-left: 45%;
+  // margin-right: 33%;
+  // text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot1, .dot2, .dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  // margin: 0 10%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  transition: background-color 0.6s ease;
+}
+
+
+/* css til underside1, underside2, underside3 mobil*/
+.main_underside {
+  margin: auto;
+  width: 90%;
+}
+
+.underside {
+  width: 100%;
+  height: 75%;//280px;
+}
+
+.underside img {
+  width: 100%;
+  height: 75%;//280px;
+  border: 1px solid blueviolet;
+}
+
+// descriptive text about product
+.description {//description
+  font-size: 30px;
+}
+
+.tabs {
+  font-size: small;
+}
+.words, .words1 {
+  font-size: large;
+}
+
+.tab-panels ul {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.tab-panels ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #999;
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.tab-panels ul li:hover {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels ul li.active {
+  color: #fff;
+  background: #666;
+}
+
+.tab-panels .panel {
+  display: none;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab-panels .panel.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid gray;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 700px) {
+
+  .mymobile1, .mymobile2, .mymobile3 {
+    display: none;
+  }
+
+  #container1, #container2, #container3 {
+    display: flex;
+    margin: 10px auto;
+    width: 100%; //340px;
+  }
+
+  .inner-slider1, .inner-slider2, .inner-slider3 {
+    // width and height should be the same dimensions as the images
+    width: 100%; //340px;
+    height: 75%; //250px;
+    // border: red solid 1px;
+    display: flex;
+    // position: relative;
+    // float: left;
+    // overflow: hidden;
+    padding: 3px;
+  }
+
+  .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
+    display: flex;
+    flex-direction: column; //row;
+    // width and height should be the same dimensions as the images
+    width: 33.3%; //100%//340
+    height: 75%; //250px;//75%
+    // border: 1px solid orange;
+    margin: auto;
+  }
+
+  .mytext img {
+    width: 99%; //100%;
+    height: 238px; //75%;
+    // border: 1px solid blue;
+  }
+  .inner-slider1 button, .inner-slider2 button, .inner-slider3 button {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: $lime;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .inner-slider1 .mytext .mytext_link {
+    height: 238px; //75%;
+    // border: 1px solid blue;
+  }
+
+  .inner-slider1 .mytext .mytext_link a img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .inner-slider1 .mytext .text {
+    height: 100px; //25%;
+    // border: 1px solid red;
+  }
+
+  .mytext_link {
+    width: 99%; //100%;
+    height: 75%; //250px;
+  }
+
+  .text {
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    height: 100px; //25%;
+    width: 97%; //100%;
+    // background-color: lightgrey;
+    // border: 1px solid blueviolet;
+  }
+
+  .prev1, .next1, .prev2, .next2, .prev3, .next3 {
+    display: none;
+  }
+  //}
+
+  /* css til underside1, underside2, underside3 tablet*/
+  .main_underside {
+    margin: auto;
+    width: 90%;
+  }
+
+  .underside {
+    width: 80%; //100%;
+    height: 75%; //280px;
+    margin: auto;
+  }
+
+  .underside img {
+    width: 100%;
+    height: 75%; //280px;
+    border: 1px solid blueviolet;
+  }
+
+  // descriptive text about product
+  .description { //description
+    font-size: 30px;
+  }
+
+  .words, .words1, .tabs {
+    font-size: large;
+  }
+
+  .tab-panels {
+    width: 80%;
+    margin: auto;
+  }
+
+  .tab-panels ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+  }
+
+  .tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels .panel {
+    display: none;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    //width: 80%;
+    //margin: auto;
+  }
+
+  .tab-panels .panel.active {
+    display: block;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid gray;
+    text-align: center;
+  }
+}
+//ivan slut
+@media screen and (min-width: 1100px) {
+
+  .mymobile1, .mymobile2, .mymobile3 {
+    display: none;
+  }
+
+  #container1, #container2, #container3 {
+    display: flex;
+    margin: 10px auto;
+    width: 100%; //340px;
+    height: 550px; //510px
+    // border: 1px solid blueviolet;
+  }
+
+  .inner-slider1, .inner-slider2, .inner-slider3 {
+    // width and height should be the same dimensions as the images
+    width: 100%; //340px;
+    height: 540px; //505px;//75%; //450px;//75%;//250px;
+    // border: red solid 1px;
+
+    //.inner-slider1, .inner-slider2, .inner-slider3 {
+    // width: 100%;
+    //height: 75%;
+    //border: red solid 1px;
+    display: flex;
+    padding: 3px;
+  }
+
+  .inner-slider1 .mytext, .inner-slider2 .mytext, .inner-slider3 .mytext {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 530px; //500px;//250px;
+    // border: 1px solid orange;
+    // margin: auto;
+    margin-top: 0;
+  }
+
+  .mytext img {
+    width: 99%;
+    height: 320px; //238px;//340px;//250px;
+    // border: 1px solid blue;
+  }
+
+  .inner-slider1 button, .inner-slider2 button, .inner-slider3 button {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: $lime;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .inner-slider1 .mytext .mytext_link {
+    height: 320px; //238px;//300px;//250px;
+  }
+
+  .inner-slider1 .mytext .mytext_link a img {
+    height: 100%; //300px;//100%;
+    width: 100%;
+
+  }
+
+  .inner-slider1 .mytext .text {
+    height: 100px;
+  }
+
+  .mytext_link {
+    width: 99%;
+    height: 75%; //300px;//250px;
+  }
+
+  .text {
+    padding: 3px;
+    font-size: 14px; //14px;
+    text-align: center;
+    height: 100px;
+    width: 98%;
+    // background: lightgrey;
+    // border: 1px solid blueviolet;
+  }
+
+  .prev1, .next1, .prev2, .next2, .prev3, .next3 {
+    display: none;
+  }
+
+  /* css til underside1, underside2, underside3 desktop */
+
+  .main_underside {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    // border: 1px solid red;
+  }
+
+  .underside {
+    width: 50%; //500px;//80%;//100%;
+    height: 500px; //280px;
+    // background: greenyellow;
+  }
+
+  .underside img {
+    width: 100%;
+    height: 75%; //280px;
+    border: 1px solid blueviolet;
+    //margin-left: 50px;
+  }
+
+  // descriptive text about product
+  .description { //description
+    font-size: 30px;
+    //margin-left: 50px;
+  }
+
+  .words, .words1, .tabs {
+    font-size: large;
+
+  }
+
+  .tab-panels {
+    //border: 1px solid green;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 3px;
+    background: white;
+  }
+  .tab-panels ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+  }
+
+  .tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+  }
+
+  .tab-panels .panel {
+    display: none;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    // width: 500px;
+  }
+
+  .tab-panels .panel.active {
+    display: block;
+    // width: 500px;
+    // background: yellow;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid gray;
+    text-align: center;
+  }
+}
+//tilbud Anders
+.tilbudbilledet{
+  padding: 15px;
+}
+//tilbud Anders slut
+//kontakt Niklas
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: vertical
+}
+
+
+input[type=submit] {
+  background-color: #2ca32c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #286628;
+}
+//kontakt Niklas slut
+@media screen and (min-width: 700px) {
+  //overordnet louise
+  header {
+    figure {
+      display: flex;
+      justify-content: center;
+      a {
+        display: inline-block;
+        img {
+          max-width: 768px;
+        }
+      }
+    }
+  }
+  nav a {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 2.9rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  p, span, a, address {
+    font-size: 2.1rem;
+  }
+  footer {
+    section#f1{
+      /*a, img {
+          max-width: ;
+        }*/
+    }
+    /*figure#f2 {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+        }*/
+  }
+}
+//overordnet louise slut
+//om Jessie - tablet
+.om {
+  font-size: 2.1em;
+  display:flex;
+  justify-content: left;
+}
+body.omos main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:  "om-text         om-text"
+  "je                   je"
+  "om2                 om2"
+  "om-billeder om-billeder";
+
+  .je {
+    grid-area: je;
+  }
+  .om-text{
+    grid-area: om-text;
+  }
+  .om2 {
+    grid-area: om2;
+  }
+  .om-billeder {
+    grid-area: om-billeder;
+  }
+  .profil {
+    margin:2px;
+  }
+  .butik {
+    margin:2px;
+  }
+}
+//om Jessie slut
+//tilbud anders
+.tilbudside{
+  display: grid;
+  grid-template-columns: auto 45% 20px 45% auto;
+  grid-template-areas:  "header header header header header"
+  "nav nav nav nav nav" //louise
+  ". selvetilbud . billedet ."
+  "footer footer footer footer footer";
+
+  header{
+    grid-area: header;
+  }
+  nav { //louise
+    grid-area: nav;
+  }
+  .selvetilbud {
+    grid-area: selvetilbud;
+  }
+  .biledet{
+    grid-area: billedet;
+  }
+  footer{
+    grid-area: footer;
+  }
+}
+//tilbud anders slut
+@media screen and (min-width: 1100px) {
+  //overordnet og forside louise
+  .mobil {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    background-color: $green;
+    padding: 1.5rem;
+    margin-bottom: 2%;
+    margin-left: -1%;
+    width: 100%;
+    a {
+      color: #ffffff;
+    }
+  }
+  body #forside video, body #video video {
+    max-width: 50%;
+    margin: 0 25%;
+  }
+  body #forside .kasse{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid $darkgreen;
+    margin: 2% 0.3%;
+  }
+  figure a img {
+    max-width: 10%;
+  }
+  footer {
+    section#f1 {
+      display: flex;
+      justify-content: space-between;
+      img, a {
+        max-width: 70%;
+      }
+    }
+    figure#f2 {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 100%;
+      img, a {
+        max-width: 100%;
+      }
+    }
+  }
+  //overordnet og forside louise slut
+  //om jessie - desktop
+  body.omos main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "om-text         om-text" "je                   je" "om2                 om2" "om-billeder om-billeder";
+
+    .je {
+      grid-area: je;
+    }
+    .om-text {
+      grid-area: om-text;
+    }
+    .om2 {
+      grid-area: om2;
+    }
+    .om-billeder {
+      grid-area: om-billeder;
+    }
+    .profil {
+      margin: 2px;
+    }
+    .butik {
+      margin: 2px;
+    }
+    .om {
+      font-size: 2.5em;
+    }
+  }}
+//om jessie slut
+
